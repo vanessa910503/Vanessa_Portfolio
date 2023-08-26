@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv = "X-UA-Compatible" content = "IE-edge">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+    <title>Personal Portfolio Website - Vanessa Huang</title>
+    <link rel = "stylesheet" href = "style.css">
+    <link rel="shortcut icon" type="x-icon" href="Subject 10.png">
+    <script src="https://kit.fontawesome.com/64437529a1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="overall-menu">
+        <nav>
+            <ul id = "sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#aboutMe">About</a></li>
+                <li><a href="#services">Data Science Projects</a></li>
+                <li><a href="#Finance">Finance & Consulting Projects</a></li>
+                <li><a href="#interest_new">Interest</a></li>
+                <li><a href="#contact_info">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="header-text">
+            <h1>Hi, I'm <span>Vanessa</span> from <br>National Taiwan University</h1>
+            <div class = 'text-wrapper'>
+                <div class="box b1">Finance Student</div>
+                <div class="box b2">Data Analyst</div>
+                <div class="box b3">Consultant</div>
+                <div class="box b4">Mandarin | English | French</div>
+            </div>
+        </div>
+        <div class = 'moreButton'>
+            <a href="#aboutMe">
+                <button type="button">Explore more</button>  
+            </a> 
+        </div>
+    </div>
+</div>
+<!-- -----about_new---------------------------------------------------------------------------- -->
+<div id = 'aboutMe'>
+    <div class = 'container'>
+        <h1 class = 'sub-title'>About Me</h1>
+        <p class = 'self-intro'>
+            Hi, I'm Vanessa Huang, a junior Finance major at National Taiwan University. I've spent a year advancing my data skills in front-end and back-end development. 
+            Proficient in programming languages and frameworks. 
+            With an insatiable thirst for knowledge and unwavering commitment to personal growth, I am ready to make a meaningful impact.
+        </p>
+        <br>
+        <div class = 'selection-bar'>
+            <button class = 'about-type active-type' onclick="opentab('skills')">
+                <p class = "type-name">Skills</p>
+            </button>
+            <button class = 'about-type' onclick = "opentab('experience')">
+                <p class = "type-name">Experience</p>
+            </button>
+            <button class = 'about-type' onclick = "opentab('internship')">
+                <p class = "type-name">Internship</p>
+            </button>
+            <button class = 'about-type' onclick = "opentab('education')">
+                <p class = "type-name">Education</p>
+            </button>
+        </div>
+        <div class = 'about-content'>
+            <!-- Skills -->
+            <div class="tab-content active-tab" id = "skills">
+                <div class = 'about-box-skill'>
+                    <h3>Back-end</h3>
+                    <div class = 'content-block'>
+                        <div class = 'tools'>
+                            <img src="images/tools/python.png" width="100">
+                        </div>    
+                        <div class="vl"></div>
+                        <div class = 'tools'>
+                            <img src="images/tools/c++.png" width="100">
+                        </div>   
+                        <div class="vl"></div>
+                        <div class = 'tools'>
+                            <img src="images/tools/SQL.png" width="100">
+                        </div>   
+                    </div>                   
+                </div>
+                <div class = 'about-box-skill'>
+                    <h3>Front-end</h3>
+                    <div class = 'content-block'>
+                        <div class = 'tools'>
+                            <img src="images/tools/html.png" width = '100'>                    
+                        </div>    
+                        <div class="vl"></div>
+                        <div class = 'tools'>
+                            <img src="images/tools/css.jpg" width = '100'>
+                        </div>   
+                        <div class="vl"></div>
+                        <div class = 'tools'>
+                            <img src="images/tools/js.png" width = '100'>
+                        </div>   
+                    </div>
+                </div>
+                <div class = 'about-box-skill'>
+                    <h3>Data Visualisation</h3>
+                    <div class = 'content-block'>
+                        <div class = 'tools'>
+                            <img src="images/tools/streamlit.png" width = '200'>
+                        </div>    
+                        <div class="vl"></div>
+                        <div class = 'tools'>
+                            <img src="images/tools/tableau.png" width = '200'>
+                        </div>   
+                        <div class="vl"></div>
+                        <div class = 'tools'>
+                            <img src="images/tools/excel.png" width = '200'>
+                        </div>   
+                    </div>                  
+                </div>
+            </div>
+            <!-- Experience -->
+            <div class="tab-content" id = "experience">
+                <div class = 'about-box-experience'>
+                    <div class = 'insidebox-ex'>
+                        <img src="images/tools/dac.png" width = '150px'>
+                        <div class = 'content-ex'>
+                            <p>NTU Data Analytics Club</p>
+                            <h3>Data Analyst | Project Member (Gogoro)</h3>
+                            <p>SEP 2022 - SEP 2023</p>
+                        </div>
+                    </div>
+                    <hr class = 'experience-line'>
+                    <div class = 'insidebox-ex'> 
+                        <img src="images/tools/tmba.png" width = '150px'>
+                        <div class = 'content-ex'>
+                            <p>TMBA</p>
+                            <h3>Analyst of Equity Capital Market / Global Investment Research</h3>
+                            <p>JUL 2022 - FEB 2023</p>
+                        </div>
+                    </div>
+                    <hr class = 'experience-line'>
+                    <div class = 'insidebox-ex'>
+                        <img src="images/tools/jp.jpeg" width = '150px'>
+                        <div class = 'content-ex'>
+                            <p>J.P. Morgan Private Bank Challenge</p>
+                            <h3>Regional finalist, top 6 shortlist</h3>
+                            <p>MAY 2022 - APR 2023</p>
+                        </div>
+                    </div>
+                    <hr class = 'experience-line'>
+                    <div class = 'insidebox-ex'>
+                        <img src="images/tools/gis.jpeg" width = '150px'>
+                        <div class = 'content-ex'>
+                            <p>Global Initiatives Symposium in Taiwan</p>
+                            <h3>Officer of Global Partnership and Delegates Affairs</h3>
+                            <p>MAR 2021 ~ JAN 2022</p>
+                        </div>
+                    </div>
+                    <hr class = 'experience-line'>
+                    <div class = 'insidebox-ex'>
+                        <img src="images/tools/wvs.png" width = '150px'>
+                        <div class = 'content-ex'>
+                            <p>NTU World Volunteer Society</p>
+                            <h3>Volunteer | Tutorial Desinger</h3>
+                            <p>SEP 2021 ~ SEP 2022</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Internship -->
+            <div class="tab-content" id = "internship">
+                <div class = 'about-box-internship'>
+                    <div class = 'insidebox-intern'>
+                        <img src="images/tools/IBM.jpg" width="150px">
+                        <div class = 'content-intern'>
+                            <p>IBM (International Business Machines Corporation)</p>
+                            <h3>Asscotiate Business Consultant</h3>
+                            <p>JUL 2023 - AUG 2023</p>
+                        </div>
+                    </div>
+                    <hr class = 'intern-line'>
+                    <div class = 'insidebox-intern'>
+                        <img src="images/tools/deloitte.jpeg" width="150px">
+                        <div class = 'content-intern'>
+                            <p>Deloitte Consulting</p>
+                            <h3>Actuarial and Insurance Solutions Consulting Intern</h3>
+                            <p>FEB 2023 - JUN 2023</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Education -->
+            <div class="tab-content" id = "education">
+                <div class = 'about-box-education'>
+                    <div class = 'insidebox-edu'>
+                        <img src="images/tools/ntu.jpeg" width = '150px'>
+                        <div class = 'content-edu'>
+                            <p>SEP 2022 - PRESENT</p>
+                            <h3>National Taiwan University</h3>
+                            <p>Department of Finance</p>
+                        </div>                       
+                    </div>
+                </div>
+                <div class = 'about-box-education'>
+                    <div class = 'insidebox-edu'>
+                        <img src="images/tools/unil.jpeg" width = '150px'>   
+                        <div class = 'content-edu'>
+                            <p>SEP 2023 - FEB 2024</p>
+                            <h3>Université de Lausannee – Business</h3>
+                            <p>Faculty of Business and Economics</p>
+                        </div>                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -----Data Science Portfolio---------------------------------------------------------------------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class = "sub-title">Data Science <br>Projects</h1>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class = 'ds-scroll'>
+            <button type="button" class="left" onclick="rightScroll_ds()">
+                <i class="fa-duotone fa-circle-chevron-left"></i>
+            </button>    
+            <div class="services-list">
+                <div>
+                    <i class="fa-regular fa-moped"></i>
+                    <h2>Gogoro - Public Opinion Analysis</h2>
+                    <hr>
+                    <div>
+                        <h3>Skill matrix</h3>
+                        <p>Web crawling, Language model application, Sentiment analysis, Data visualization</p>
+                        <br>
+                        <h3>Tools</h3>
+                        <p>Python, Streamlit, CSS, HTML, ChatGPT</p>
+                    </div>
+                    <a href="#services"><span>Learn more</span> ></a>
+                    <br>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-regular fa-location-dot"></i>
+                    <h2>Travel Assistant</h2>
+                    <hr>
+                    <div>
+                        <h3>Skill matrix</h3>
+                        <p>Web crawling, Data visualization, EDA, Machine Learning (Prediction)</p>
+                        <br>
+                        <h3>Tools</h3>
+                        <p>Python, CSS, HTML</p>
+                    </div>
+                    <a href="#services"><span>Learn more</span> ></a>
+                    <br>
+                </div>
+                <div>
+                    <i class="fa-regular fa-smoking"></i>
+                    <h2>Freedom from Tobacco</h2>
+                    <hr>
+                    <div>
+                        <h3>Skill matrix</h3>
+                        <p>Fundamental logic of Python syntax</p>
+                        <br>
+                        <h3>Tools</h3>
+                        <p>Python, Pygame</p>
+                    </div>
+                    <a href="Tobacco.html"><span>Learn more</span> ></a>
+                    <br>
+                </div>
+                <div>
+                    <i class="fa-brands fa-airbnb"></i>
+                    <h2>Airbnb Analysis in NYC</h2>
+                    <hr>
+                    <div>
+                        <h3>Skill matrix</h3>
+                        <p>EDA, Data visualization, Machine Learning</p>
+                        <br>
+                        <h3>Tools</h3>
+                        <p>Python, ML model (Multiple Linear Regression, Random Forest)</p>
+                    </div>
+                    <a href="Airbnb.html"><span>Learn more</span> ></a>
+                    <br>
+                </div>
+                <div>
+                    <i class="fa-regular fa-database"></i>
+                    <h2>No Data</h2>
+                    <hr>
+                    <div>
+                        <h3>Skill matrix</h3>
+                        <p>Web crawling, Data visualization, EDA, Machine Learning (Prediction)</p>
+                        <br>
+                        <h3>Tools</h3>
+                        <p>Python, CSS, HTML</p>
+                    </div>
+                    <a href="#services"><span>Learn more</span> ></a>
+                    <br>
+                </div>
+            </div>
+            <button type="button" class="right" onclick="leftScroll_ds()">
+                <i class="fa-duotone fa-circle-chevron-right"></i>
+            </button>            
+        </div>
+        <!-- <a href="#" class = "btn">See more</a> -->
+    </div>
+</div>
+<!-- -----Finance  |  Consulting Portfolio (NEW)---------------------------------------------------------------------------- -->
+<div id = 'Finance'>
+    <div class = 'container'>
+        <h1 class = 'sub-title'>Finance &  <br>Consulting Projects</h1>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class = 'ds-scroll'>
+            <button type="button" class="left" onclick="rightScroll_f()">
+                <i class="fa-duotone fa-circle-chevron-left"></i>
+            </button>    
+            <div class = 'finance-list'>
+                <div class = "finance-item">
+                    <a href="JP_Morgan.html">
+                        <img src="images/JP.jpg">
+                    </a>
+                    <p class = 'time'>MAR 2022 ~ APR 2022</p>
+                    <h3>J.P. Morgan Private Bank Challenge</h2>
+                    <p class = 'description'>
+                        Studied mainly in the fields of alternatives, fixed income, and macroeconomics
+                    </p>
+                </div>
+                <div class = "finance-item">
+                    <a href="Deloitte.html">
+                        <img src="images/consulting.jpg">
+                    </a>
+                    <p class = 'time'>MAR 2023 ~ JUN 2023</p>
+                    <h3>Deloitte Consulting Project</h2>
+                    <p class = 'description'>
+                        Do research on the annual report of the foreign insurance company, to see the improvement Taiwanese insurance company can make
+                    </p>
+                </div>
+                <div class = "finance-item">
+                    <a href="REITS.html">
+                        <img src="images/reits.jpg">
+                    </a>
+                    <p class = 'time'>SEP 2022 ~ FEB 2023</p>
+                    <h3>TMBA – REITs</h2>
+                    <p class = 'description'>
+                        Analysis of economic conditions in various countries, currency policies, investment strategies, 
+                        and investment targets, providing recommendations accordingly
+                    </p>
+                </div>
+                <div class = "finance-item">
+                    <a href="USDX.html">
+                        <img src="images/usdx.jpg">
+                    </a>
+                    <p class = 'time'>SEP 2022 ~ FEB 2023</p>
+                    <h3>TMBA – USDX</h2>
+                    <p class = 'description'>
+                        Analysis of economic conditions in various countries, currency policies, investment strategies, 
+                        and investment targets, providing recommendations accordingly
+                    </p>
+                </div>
+                <div class = "finance-item">
+                    <a href="ER.html">
+                        <img src="images/equity.jpg">
+                    </a>
+                    <p class = 'time'>JUL 2022 ~ AUG 2022</p>
+                    <h3>TMBA – Equity Research</h2>
+                    <p class = 'description'>
+                        Analysis of economic conditions in various countries, currency policies, investment strategies, 
+                        and investment targets, providing recommendations accordingly
+                    </p>
+                </div>
+            </div>
+            <button type="button" class="right" onclick="leftScroll_f()">
+                <i class="fa-duotone fa-circle-chevron-right"></i>
+            </button>            
+        </div>
+    </div>
+</div>
+<!-- -----Interest---------------------------------------------------------------------------- -->
+<!-- <div>
+    <div id = 'interest'>
+        <h1 class = 'sub-title'><span>Interest </span> that reflect <br>who I am</h1>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class = 'interest-scroll'> 
+            <button type="button" class="left" onclick="rightScroll_int()">
+                <i class="fa-duotone fa-circle-chevron-left"></i>
+            </button>  
+            <div class = 'interest-list' dir="ltr">
+                <div class = 'interest-item'>
+                    <img src="images/interest/skateboard.jpg">
+                    <h2 class="floating-text">Skateboarding – <br>Freestyle was never cool. </h2>
+                </div>
+                <div class = 'interest-item'>
+                    <img src="images/interest/lego.jpg">
+                    <h2 class="floating-text">Lego brings <br>my imagination to life.</h2>
+                </div>
+                <div class = 'interest-item-center'>
+                    <h2>The true secret of happiness <br>lies in taking a genuine interest in <br>all the details of daily life.</h2>
+                </div>
+                <div class = 'interest-item'>
+                    <img src="images/interest/swim.jpg">
+                    <h2 class="floating-text">The water is calling, <br>I must swim.</h2>
+                </div>
+                <div class = 'interest-item'>
+                    <img src="images/interest/mountain.jpg">
+                    <h2 class="floating-text">The best view <br>comes after the hardest climb</h2>
+                </div>
+            </div> 
+            <button type="button" class="right" onclick="leftScroll_int()">
+                <i class="fa-duotone fa-circle-chevron-right"></i>
+            </button>  
+        </div>       
+    </div>
+</div> -->
+
+<!-- -----Interest_new---------------------------------------------------------------------------- -->
+<div>
+    <div id = 'interest_new'>
+        <h1 class = 'sub-title_new'><span>Interest </span> that reflect <br>who I am</h1>
+        <div class = 'slider'> 
+            <div class = 'slide-track'>
+                <div class = 'slide'>
+                    <img src="images/interest/skateboard.jpg">
+                    <h2 class="floating-text">Skateboarding – <br>Freestyle was never cool. </h2>
+                </div>
+                <div class = 'slide'>
+                    <img src="images/interest/lego.jpg">
+                    <h2 class="floating-text">Lego brings <br>my imagination to life.</h2>
+                </div>
+                <div class = 'slide-center'>
+                    <h2>The true secret of happiness <br>lies in taking a genuine interest in <br>all the details of daily life.</h2>
+                </div>
+                <div class = 'slide'>
+                    <img src="images/interest/swim.jpg">
+                    <h2 class="floating-text">The water is calling, <br>I must swim.</h2>
+                </div>
+                <div class = 'slide'>
+                    <img src="images/interest/mountain.jpg">
+                    <h2 class="floating-text">The best view <br>comes after the hardest climb</h2>
+                </div>
+                <div class = 'slide'>
+                    <img src="images/interest/skateboard.jpg">
+                    <h2 class="floating-text">Skateboarding – <br>Freestyle was never cool. </h2>
+                </div>
+                <div class = 'slide'>
+                    <img src="images/interest/lego.jpg">
+                    <h2 class="floating-text">Lego brings <br>my imagination to life.</h2>
+                </div>
+                <div class = 'slide-center'>
+                    <h2>The true secret of happiness <br>lies in taking a genuine interest in <br>all the details of daily life.</h2>
+                </div>
+                <div class = 'slide'>
+                    <img src="images/interest/swim.jpg">
+                    <h2 class="floating-text">The water is calling, <br>I must swim.</h2>
+                </div>
+                <div class = 'slide'>
+                    <img src="images/interest/mountain.jpg">
+                    <h2 class="floating-text">The best view <br>comes after the hardest climb</h2>
+                </div> 
+            </div> 
+        </div>   
+        <i id="rotationButton" class="fa-sharp fa-regular rotation-icon fa-circle-play" style="color: #85868c;"></i>
+    </div>
+</div>
+
+<!-- -----Contact_new---------------------------------------------------------------------------- -->
+<div id = 'contact_info'>
+    <div class = 'container'>
+        <h1 class = 'sub-title'>Contacting Me</h1>
+        <h5>Always brimming with enthusiasm when it comes to embracing new opportunities <br>and embarking on fresh journeys</p>
+        <div class = 'basic_info'>
+            <p><i class="fa-regular fa-envelope"></i><br>h0935333125@gmail.com</p>
+            <p><i class="fa-regular fa-location-dot"></i><br>Rm. 67, 11F., No. 16-2, Siyuan St.,<br> Zhongzheng Dist., Taipei City 100 , Taiwan (R.O.C.)</p>
+            <p><i class="fa-regular fa-phone"></i><br>+886 935333125</p>
+        </div>
+        <div class = 'social_media'>
+            <div class = 'social-items'>
+                <a href="https://www.facebook.com/profile.php?id=100021570548500" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <p>Facebook</p>
+            </div>
+            <div class = 'social-items'>
+                <a href="https://www.instagram.com/v.h_________/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <p>Instagram</p>
+            </div>
+            <div class = 'social-items'>
+                <a href="https://www.linkedin.com/in/vanessa-huang-760a8a232/"><i class="fa-brands fa-linkedin"></i></a>
+                <p>Linkedin</p>
+            </div>
+        </div>
+        <hr class = 'contact-line'>
+        <div class = 'CV'>
+            <embed src="images/CV.pdf#view=FitH&scrollbar=0&toolbar=0&statusbar=0&messages=0&navpanes=0" style="width:80%;height:80vh"/>
+        </div>
+        <a href="images/CV.pdf" download class="button_CV">Download CV</a>
+        <hr class = 'bottom_line'>
+        <div class="copyright">
+            <p>Copyright © Vanessa Huang.</p>
+        </div>  
+    </div>
+</div>
+
+<!-- -----JavaScript---------------------------------------------------------------------------- -->
+<script>
+    function opentab(tabId, tabButton) {
+        var tabContents = document.getElementsByClassName('tab-content');
+        
+        for (var i = 0; i < tabContents.length; i++) {
+            tabContents[i].classList.remove('active-tab');
+        }
+        
+        var selectedTab = document.getElementById(tabId);
+        selectedTab.classList.add('active-tab');
+        
+        // Remove active-type class from all tab buttons
+        var tabButtons = document.getElementsByClassName('about-type');
+        for (var i = 0; i < tabButtons.length; i++) {
+            tabButtons[i].classList.remove('active-type');
+        }
+        
+        // Add active-type class to the clicked tab button
+        tabButton.classList.add('active-type');
+    }
+</script>
+
+<script>
+    // Function: openmenu & closemenu for the sidemenu
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0"; 
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<script>
+    function leftScroll_ds() {
+        const left = document.querySelector(".services-list");
+        left.scrollBy({
+            left: 600,
+            behavior: "smooth"
+        });
+    }
+
+    function rightScroll_ds() {
+        const right = document.querySelector(".services-list");
+        right.scrollBy({
+            left: -600,
+            behavior: "smooth"
+        });
+    }
+</script>
+
+<script>
+    function leftScroll_f() {
+        const left = document.querySelector(".finance-list");
+        left.scrollBy({
+            left: 600,
+            behavior: "smooth"
+        });
+    }
+
+    function rightScroll_f() {
+        const right = document.querySelector(".finance-list");
+        right.scrollBy({
+            left: -600,
+            behavior: "smooth"
+        });
+    }
+</script>
+
+<script>
+    window.onload= document.getElementById("focus").focus();
+    function leftScroll_int() {
+        const left = document.querySelector(".interest-list");
+        left.scrollBy({
+            left: 1000,
+            behavior: "smooth"
+        });
+    }
+
+    function rightScroll_int() {
+        const right = document.querySelector(".interest-list");
+        right.scrollBy({
+            left: -1000,
+            behavior: "smooth"
+        });
+    }
+</script>
+
+<script>
+const slider = document.querySelector('.slide-track');
+const rotationButton = document.getElementById('rotationButton');
+let isRotating = true;
+
+function toggleRotation() {
+    if (isRotating) {
+        slider.style.animationPlayState = 'paused';
+        rotationButton.classList.add('paused'); // Add a class to change icon appearance
+        rotationButton.classList.remove('fa-circle-play'); // Remove class for the existing image
+        rotationButton.classList.add('fa-circle-pause'); // Add class for the new image
+    } else {
+        slider.style.animationPlayState = 'running';
+        rotationButton.classList.remove('paused'); // Remove the class to reset icon appearance
+        rotationButton.classList.remove('fa-circle-pause'); // Remove class for the new image
+        rotationButton.classList.add('fa-circle-play'); // Add class for the existing image
+    }
+    isRotating = !isRotating;
+}
+
+rotationButton.addEventListener('click', toggleRotation);
+</script>
+
+</body>
+</html>
+
+
