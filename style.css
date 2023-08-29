@@ -523,20 +523,20 @@ nav ul li a:hover{
     color: #55BEF0;
 }
 
-.fa-sharp.fa-regular.fa-location-dot{
+.fa-light.fa-microchip-ai{
     color: #5DE6FF;
 }
 
-.fa-regular.fa-smoking{
+.fa-sharp.fa-regular.fa-location-dot{
     color: #409CFF;
 }
 
-.fa-brands.fa-airbnb{
-    color: #7D7AFF;
+.fa-regular.fa-smoking{
+    color: #008299;
 }
 
-.fa-regular.fa-database{
-    color: #DA8FFF;
+.fa-brands.fa-airbnb{
+    color: #AD44AB;
 }
 
 .services-list > div a {
