@@ -519,6 +519,10 @@ nav ul li a:hover{
     margin-bottom: 5px;
 }
 
+.fa-regular.fa-house{
+    color: #0C817B;
+}
+
 .fa-regular.fa-moped{
     color: #55BEF0;
 }
