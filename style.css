@@ -520,27 +520,31 @@ nav ul li a:hover{
 }
 
 .fa-regular.fa-house{
-    color: #0C817B;
+    color: #003373;
+}
+
+.fa-solid.fa-map-location-dot{
+    color: #75aadb;
 }
 
 .fa-regular.fa-moped{
-    color: #55BEF0;
+    color: #0060aB;
 }
 
 .fa-light.fa-microchip-ai{
-    color: #5DE6FF;
+    color: #5e514e;
 }
 
 .fa-sharp.fa-regular.fa-location-dot{
-    color: #409CFF;
+    color: #0099e6;
 }
 
 .fa-regular.fa-smoking{
-    color: #008299;
+    color: #accce6;
 }
 
 .fa-brands.fa-airbnb{
-    color: #AD44AB;
+    color: #557aa0;
 }
 
 .services-list > div a {
@@ -865,11 +869,11 @@ top: 0;
 }
 
 .fa-brands.fa-instagram{
-    color: #AB39FF;
+    color: #0259B3;
 }
 
 .fa-brands.fa-linkedin{
-    color: #65CD43;
+    color: #0259B3;
 }
 
 .social-items:hover{
